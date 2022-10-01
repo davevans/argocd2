@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: colourapp
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: manifests/colour-app
+    repoURL: https://github.com/davevans/argocd2
+    targetRevision: master
+  syncPolicy:
+    automated: {}
