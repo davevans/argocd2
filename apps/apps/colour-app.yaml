@@ -15,4 +15,5 @@ spec:
     repoURL: https://github.com/davevans/argocd2
     targetRevision: master
   syncPolicy:
-    automated: {}
+    automated: 
+      prune: true
