@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: colourapp
-        image: davevans/colourapp:latest
+        image: davevans/colourapp:v1.1
         ports:
         - containerPort: 80
         env:
