@@ -10,11 +10,5 @@ argocd repo add https://github.com/davevans/argocd2.git
 
 ## Create app-of-apps
 ```
-argocd app create app-of-apps \
-    --dest-namespace argocd \
-    --dest-server https://kubernetes.default.svc \
-    --repo https://github.com/davevans/argocd2.git \
-    --path apps \
-    --revision master \
-    --sync-policy automated
+argocd app create app-of-apps --dest-namespace argocd --dest-server https://kubernetes.default.svc --repo https://github.com/davevans/argocd2.git --path apps --revision master --sync-policy automated
 ```
