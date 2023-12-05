@@ -13,9 +13,9 @@ spec:
   sources:
     - chart: nginx
       repoURL: https://charts.bitnami.com/bitnami
-      targetRevision: 13.2.8
+      targetRevision: 15.4.3
       helm:
-        valuesFiles:
+        valueFiles:
         - $values/charts/nginx/values.yaml
     - repoURL: https://github.com/davevans/argocd2.git
       targetRevision: develop
