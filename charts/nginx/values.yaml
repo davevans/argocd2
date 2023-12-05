@@ -1,0 +1,7 @@
+service:
+  type: "ClusterIP"
+ingress:
+  enabled: false
+metrics:
+  enabled: false
+replicaCount: 1

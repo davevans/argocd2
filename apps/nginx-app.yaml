@@ -10,10 +10,13 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   project: default
-  source:
-    chart: nginx
-    repoURL: https://charts.bitnami.com/bitnami
-    targetRevision: 13.2.8
+  sources:
+    - chart: nginx
+      repoURL: https://charts.bitnami.com/bitnami
+      targetRevision: 13.2.8
+    - repoURL: https://github.com/davevans/argocd2.git
+      path: charts/nginx
+      targetRevision: develop
   syncPolicy:
     automated: 
       prune: true
