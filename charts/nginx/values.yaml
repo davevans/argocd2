@@ -4,3 +4,4 @@ ingress:
   enabled: false
 metrics:
   enabled: false
+replicaCount: 4
