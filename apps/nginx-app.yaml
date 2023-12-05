@@ -21,7 +21,7 @@ spec:
     - repoURL: https://github.com/davevans/argocd2.git
       targetRevision: develop
       ref: values
-    - repoUrl: https://github.com/davevans/argocd2-env-defaults.git
+    - repoURL: https://github.com/davevans/argocd2-env-defaults.git
       targetRevision: main
       ref: env-values
   syncPolicy:
